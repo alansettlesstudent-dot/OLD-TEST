@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Testament Help Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="pill">KJV Old Testament Guide</div>
+        <h1>Real life situations<br>and scriptures that help</h1>
+        <p>Search 20 practical situations and quickly find King James scriptures for peace, wisdom, hope, courage, forgiveness, and more.</p>
+        <div class="stats">
+          <div class="stat"><span>20</span><small>situations</small></div>
+          <div class="stat"><span>KJV</span><small>scriptures</small></div>
+          <div class="stat"><span>Fast</span><small>search tool</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-card">
+          <div class="art-label">God's light</div>
+          <svg viewBox="0 0 360 200" class="art-svg" aria-hidden="true">
+            <defs>
+              <radialGradient id="g1" cx="50%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#ffe7a3"/>
+                <stop offset="50%" stop-color="#fff4cf"/>
+                <stop offset="100%" stop-color="#f7fbff"/>
+              </radialGradient>
+            </defs>
+            <rect width="360" height="200" fill="url(#g1)"></rect>
+            <circle cx="180" cy="68" r="34" fill="#f7c955"></circle>
+            <circle cx="180" cy="68" r="18" fill="#fff8e6"></circle>
+            <path d="M110 165 C140 115 160 98 180 98 C200 98 220 115 250 165" fill="none" stroke="#c3cddd" stroke-width="13" stroke-linecap="round"/>
+            <path d="M126 155 C148 122 164 107 180 107 C196 107 212 122 234 155" fill="none" stroke="#f7fbff" stroke-width="20" stroke-linecap="round" opacity=".9"/>
+          </svg>
+        </div>
+        <div class="art-card">
+          <div class="art-label">Jesus the shepherd</div>
+          <svg viewBox="0 0 360 200" class="art-svg" aria-hidden="true">
+            <rect width="360" height="200" fill="#f6fbf8"></rect>
+            <circle cx="180" cy="48" r="22" fill="#f2d8bf" stroke="#c49d7d" stroke-width="2"></circle>
+            <path d="M162 48 C168 25, 192 24, 198 48" fill="#6a4b37"></path>
+            <path d="M147 74 C147 56, 213 56, 213 74 L213 148 C213 162, 205 170, 180 170 C155 170, 147 162, 147 148 Z" fill="#faf8f2" stroke="#b8afa0" stroke-width="2"></path>
+            <path d="M220 80 L230 165" stroke="#8c6748" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M214 102 C226 96, 236 96, 246 102" stroke="#8c6748" stroke-width="4" stroke-linecap="round"></path>
+            <ellipse cx="120" cy="150" rx="22" ry="15" fill="#fff" stroke="#b8afa0" stroke-width="2"></ellipse>
+            <ellipse cx="245" cy="150" rx="22" ry="15" fill="#fff" stroke="#b8afa0" stroke-width="2"></ellipse>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="controls-wrap">
+    <div class="controls">
+      <input id="search" type="text" placeholder="Search anxiety, work, guilt, fear, family..." />
+      <div id="chips" class="chips"></div>
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="panel list-panel">
+      <div class="panel-top">
+        <h2>Situations</h2>
+        <span id="countBadge" class="count-badge"></span>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section class="panel detail-panel">
+      <div class="detail-top">
+        <span id="categoryTag" class="category-tag"></span>
+        <h2 id="detailTitle">Select a situation</h2>
+        <p id="detailDesc">Click a card to see scriptures and a practical takeaway.</p>
+      </div>
+      <div class="detail-box">
+        <h3>Real-world scenario</h3>
+        <p id="detailSituation"></p>
+      </div>
+      <div class="detail-box">
+        <h3>Scriptures</h3>
+        <div id="verses"></div>
+      </div>
+      <div class="detail-box">
+        <h3>Takeaway</h3>
+        <p id="detailTakeaway"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built as an interactive KJV Old Testament study helper.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
